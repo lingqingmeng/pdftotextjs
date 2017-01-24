@@ -15,6 +15,9 @@ need `pdftotext` which comes with `poppler-utils`.
 * MacOSX `sudo port install poppler` or `brew install xpdf`.
 * Windows `download and install` [Xpdf](http://www.foolabs.com/xpdf/download.html).
 
+### Changes
+* Fixed issue where max buffer was not being used for large PDF files
+
 ### Installation
 
 via npm:
