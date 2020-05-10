@@ -29,7 +29,7 @@ npm install pdftotextjs
 ### Usage
 #### Asynchronous example
 
-```Javscript
+```js
 var pdftotext = require('pdftotextjs'),
     pdf = new pdftotext('test/pdfs/sample.pdf');
 
