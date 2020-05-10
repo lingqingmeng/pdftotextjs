@@ -9,10 +9,10 @@
 
 
 pdftotextjs provides access to `pdftotext` via shell in nodejs. You'll
-need `pdftotext` which comes with `poppler-utils`.
+need `pdftotext` which comes with `poppler-utils`
 
-* Ubuntu/Debian `sudo apt-get install poppler-utils`.
-* MacOSX `sudo port install poppler` or `brew install xpdf`.
+* Ubuntu/Debian `sudo apt-get install poppler-utils`
+* MacOSX `sudo port install poppler` or `brew install xpdf`
 * Windows `download and install` [Xpdf](http://www.foolabs.com/xpdf/download.html).
 
 ### Changes
@@ -22,13 +22,14 @@ need `pdftotext` which comes with `poppler-utils`.
 
 via npm:
 
-```
-$ npm install pdftotextjs
+```bash
+npm install pdftotextjs
 ```
 
 ### Usage
 #### Asynchronous example
-```
+
+```Javscript
 var pdftotext = require('pdftotextjs'),
     pdf = new pdftotext('test/pdfs/sample.pdf');
 
@@ -49,17 +50,19 @@ pdf.getText(function(err, stdout, stderr) {
 
 
 #### Synchronous example
-```
+  
+```js
 var pdftotext = require('pdftotextjs'),
     pdf = new pdftotext('test/pdfs/sample.pdf');
 
 var data = pdf.getTextSync(); // returns buffer
 console.log(data.toString('utf8'));
 ```
-
+  
 ### Tests
-```
-$ npm test
+  
+```bash
+npm test
 ```
 
 Coverage
